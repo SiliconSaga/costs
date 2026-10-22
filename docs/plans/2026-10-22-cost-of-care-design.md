@@ -111,7 +111,7 @@ Today this is one resident's unincorporated project. It may become a nonprofit, 
 
 ## 9. Hosting and repositories
 
-A static site on GitHub Pages from this repository, built with Jekyll; the theme is undecided (just-the-docs for parity with the ledger, or something plainer). Pipeline code under `pipeline/`, configuration under `config/`, derived JSON committed or attached as release assets depending on size, raw files on the homelab only. DuckDB-WASM in the browser is an option later for ad-hoc queries over the Parquet. Submission intake and storage live on the homelab and never on GitHub. The domain is undecided: a frontstate.org subdomain is available in principle, but the civic components are expected to move to their own organization, and the domain should follow that decision. The workspace's local catalog currently points this repository at Cervator/prices; move it when the organization exists.
+A static site on GitHub Pages from this repository, built with Jekyll; the theme is undecided (just-the-docs for parity with the ledger, or something plainer). Pipeline code under `pipeline/`, configuration under `config/`, derived JSON committed or attached as release assets depending on size, raw files on the homelab only. DuckDB-WASM in the browser is an option later for ad-hoc queries over the Parquet. Submission intake and storage live on the homelab and never on GitHub. The domain is undecided: a frontstate.org subdomain is available in principle, but the civic components are expected to move to their own organization, and the domain should follow that decision. The repository lives under SiliconSaga for now, like the schools ledger; move both when the organization exists.
 
 ## 10. Public-records asks: cheap to prepare, low expectations
 
