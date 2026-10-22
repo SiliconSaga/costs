@@ -1,0 +1,13 @@
+# Replace "Your Name" below — angle-bracket placeholders would vanish in
+# rendered HTML (browsers treat them as unknown tags), so this ships as a
+# visible, silly-proof default until you personalize it.
+title: Your Name's page
+description: Built with the GDD GitHub Pages template
+theme: jekyll-theme-cayman
+
+# A few other GitHub-supported themes you can swap to later by
+# editing the `theme:` line above:
+#   jekyll-theme-minimal, jekyll-theme-slate, jekyll-theme-architect,
+#   jekyll-theme-merlot, jekyll-theme-modernist, jekyll-theme-leap-day
+# For richer theming, ask your agent to walk you through forking a
+# theme repo or moving to a different SSG.
