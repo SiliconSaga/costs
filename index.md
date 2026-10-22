@@ -1,16 +1,12 @@
 ---
 layout: default
-title: Your Name's page
+title: Cost of Care
 ---
 
-# Hello — this is your new GitHub Pages site
+# Cost of Care
 
-You're looking at the placeholder home page. **Edit this file
-(`index.md`) to make it yours**, then commit, open a PR, and watch the
-bots review your changes before you merge.
+A public record of what health care costs in Essex County, New Jersey, built from the price files hospitals and insurers are required to publish, with Medicare's rate beside every figure.
 
-Replace this paragraph with whatever you want — a short bio, project
-log, recipe collection, anything. The `_config.yml` next to this file
-controls the theme and site title; tweak that whenever you're ready.
+This site is being designed. Nothing is published yet. The design is in the repository's [docs/plans](https://github.com/Cervator/prices/tree/main/docs/plans) folder.
 
-For the full tutorial walkthrough, see [`README.md`](README.md).
+Why it matters to a school district is explained on the schools ledger's [How Services Could Work](https://schools.frontstate.org/ledger/services) page.
