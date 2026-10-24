@@ -97,5 +97,5 @@ Publicly documented formats, for the pattern pass. The candidate design is a gen
 ## Open
 
 - Test each submitter-side path above on a real EOB and an itemized bill, on an iPhone, an Android phone, and a desktop; then write the one-screen illustrated guide per device.
-- Run Presidio with the carrier patterns on redacted and unredacted samples; record recall and precision per recognizer, with the false negatives and false positives listed, and set the human-review posture from the numbers.
+- Run Presidio with the carrier patterns on redacted and unredacted samples; record recall and precision per recognizer, with the false negatives and false positives listed. The numbers set triage order and what the reviewer is warned to look for; the human look before publication is mandatory whatever they say.
 - Confirm the Cigna and Oxford identifier formats.

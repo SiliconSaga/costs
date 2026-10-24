@@ -52,7 +52,7 @@ Reachable only over Tailscale. The homelab **pulls** the terabyte insurer files 
 
 ## Proving the shape before the data
 
-Milestone M0.5 runs this topology end to end with a dummy file and no real data: a form on GKE accepts a file encrypted in the browser, a homelab job pulls and decrypts it over the tailnet, writes a one-row Parquet, opens the pull request, and a Pages build renders it. It asserts three things besides the happy path: the receiver's ciphertext is gone after the pull; the stored original is deleted when its retention clock expires, tested with the clock shortened to minutes; and the private key never leaves the homelab (the receiver's configuration holds only the public key). No gigabytes, no health documents. It proves the hop, the key handling, the deletion, and the build trigger, which are the parts most likely to be wrong.
+Milestone M0.5 runs this topology end to end with a dummy file and no real data: a form on GKE accepts a file encrypted in the browser, a homelab job pulls and decrypts it over the tailnet, writes a one-row Parquet, opens the pull request, and a Pages build renders it. It asserts three things besides the happy path: the receiver's ciphertext is gone after the pull; the stored original is deleted when its retention clock expires, tested with the clock shortened to minutes; and the receiver's deployed configuration and image contain the public key and nothing that could decrypt (where the private key lives is a custody question for the homelab, not something a spike can prove). No gigabytes, no health documents. It proves the hop, the key handling, the deletion, and the build trigger, which are the parts most likely to be wrong.
 
 ## Open
 

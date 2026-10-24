@@ -19,7 +19,7 @@ The record is the file. We do not adjudicate whether the file is right; we show 
 
 ## Disputes about a submitted record
 
-A submitter withdraws by code. A provider named in a submitted record may state that the record is wrong; an approved excerpt of the statement, redacted and reviewed as above, is published beside the record, labelled, and the record stays unless the submitter withdraws it or our own re-check of the extraction finds an error.
+A submitter withdraws by code. A provider named in a submitted record may state that the record is wrong; an approved excerpt of the statement, redacted and reviewed as above, is published beside the record, labelled, and the record stays unless the submitter withdraws it or our own re-check of the extraction finds an error. When a record is withdrawn or removed, its Statement goes with it: a Statement is published only as a response to a specific record and does not stand on the site alone. The exchange is kept in the private record, and the corrections page notes that a record and its Statement were removed on a date, without saying which.
 
 ## Open
 
