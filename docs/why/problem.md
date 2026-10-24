@@ -1,6 +1,6 @@
 # Problem and audiences
 
-What a hospital gets paid for a given scan or delivery, by each insurer, has been public by federal rule since January 1, 2021. Since January 1, 2026 the files must carry actual dollar figures and an attestation signed by a senior officer, with enforcement from April 1, 2026. Insurers have published their negotiated rates for every in-network provider since July 2022. Nobody has turned either into something an Essex County parent can read.
+What a hospital gets paid for a given scan or delivery, by each insurer, has been public by federal rule since January 1, 2021. Since January 1, 2026 the files must state each negotiated rate in dollars where it was negotiated in dollars, and where it is a percentage or a formula must add the median and the 10th and 90th percentile of what the insurer actually paid, with an attestation signed by a senior officer; enforcement began April 1, 2026. Insurers have published their negotiated rates for every in-network provider since July 2022. Nobody has turned either into something an Essex County parent can read.
 
 The national tools cover hospitals in aggregate. None of them shows a freestanding imaging center next to the hospital department two miles away that charges several times more for the same scan with the same insurer. New Jersey has no all-payer claims database and no state price tool.
 

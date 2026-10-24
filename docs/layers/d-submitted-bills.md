@@ -16,7 +16,7 @@ Names, member and subscriber IDs, claim numbers, dates of birth, addresses, acco
 
 ## Small-town re-identification
 
-Month precision, no diagnoses, and a suppression rule: a row that is the only one for a rare procedure at a facility in a month is published only with the date widened to a quarter or a year. The principle is that the record protects the submitter before it protects precision.
+Month precision, no diagnoses, and a suppression rule. An individual row is published only when at least a threshold number of records (proposal: five) share its facility, procedure, and plan type within the publication period; below that, the group is shown as a count and a median or is held until it fills, and widening the period is one way to let it fill, never a substitute for the threshold. A row that is alone even at a year's width is not published as a row. The principle is that the record protects the submitter before it protects precision.
 
 ## Intake
 
@@ -28,7 +28,7 @@ A running count of submissions and facilities covered. A quarterly "what the bil
 
 ## Open
 
-- Define the suppression rule precisely, with the threshold counts.
+- Confirm the suppression threshold (proposal: five) and which fields define a group.
 - Decide whether to show individual submitted rows or only aggregates while counts are small; the suppression rule decides most of this.
 - Confirm the deletion schedule for originals. Proposal: 30 days.
 - Hands-on test of the redaction paths on a real EOB; see [Redaction](../trust/redaction.md).

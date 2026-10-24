@@ -29,7 +29,7 @@ Take the photo or screenshot, open it in the phone's own editor, cover each iden
 - **iPhone.** Use the Markup shape tool, filled, solid black. Do not use the marker or highlighter: it defaults to less than full opacity and the text underneath has been recovered by adjusting exposure ([9to5Mac, 2018](https://9to5mac.com/2018/03/13/ios-markup-reveal-redact-sensitive-info/); [MobileSyrup, 2019](https://mobilesyrup.com/2019/11/28/dont-use-ios-highlighter-tool-censor-information-screenshots/)). When sharing, turn Location off under Options.
 - **Android, Google Photos.** The Markup Redact pen added in September 2026 offers only mosaic and blur styles ([9to5Google](https://9to5google.com/2026/09/24/google-photos-redact-moods/)), which are the reversible kind. Use the plain pen at full opacity in a solid colour with overlapping strokes, or a filled shape, and save as a copy.
 - **Samsung One UI 8.5 and later.** The share sheet's Privacy Protection detects sensitive text and offers redaction styles ([SamMobile](https://www.sammobile.com/news/one-ui-8-5-can-protect-sensitive-info-in-images-you-share)). Choose the solid style, not blur or pixelate.
-- **Krita on Android** ([krita.org](https://krita.org/en/download/), GPLv3) is the one open-source phone editor with a proper opaque-rectangle and flat export, for anyone who wants it.
+- **Krita on Android** ([krita.org](https://krita.org/en/download/), GPLv3) is the open-source phone editor the desk research turned up with a proper opaque-rectangle and flat export, for anyone who wants it; the survey was not exhaustive.
 
 !!! warning "Unverified"
     Whether current iOS versions still default the marker to partial opacity; per-model availability of Samsung's Privacy Protection; whether iOS screenshots carry location metadata (camera photos do).
@@ -46,7 +46,7 @@ For an image rather than a PDF: **GIMP** (GPLv3, 3.2.6) with an opaque filled re
 
 ### Browser-only tools
 
-None recommended. No open-source, audited, client-side-only PDF redactor exists as of this writing; the closed ones make self-reported privacy claims, and at least one sends telemetry. Residents should use the phone or desktop paths above.
+None recommended. The desk research found no open-source, audited, client-side-only PDF redactor; the closed ones it found make self-reported privacy claims, and at least one sends telemetry. That is a statement about what was found, not a survey of the market. Residents should use the phone or desktop paths above.
 
 ## Failure modes to warn about
 
@@ -81,7 +81,7 @@ Tools built for clinical narrative (Philter, NLM Scrubber, MIST) are dormant or 
 
 ### Carrier identifier formats
 
-Publicly documented formats, for the pattern pass. A generic recognizer for an 8–17 character token next to a member, subscriber, group, claim, or account label catches most; these add high-confidence matches.
+Publicly documented formats, for the pattern pass. The candidate design is a generic recognizer for an 8–17 character token next to a member, subscriber, group, claim, or account label, with the formats below as high-confidence matches. How much it catches and how much it flags wrongly are unmeasured until the sample run.
 
 | Carrier | Format | Source |
 |---|---|---|
@@ -92,10 +92,10 @@ Publicly documented formats, for the pattern pass. A generic recognizer for an 8
 | Medicare | 11-character MBI; Presidio's `US_MBI` covers it | |
 
 !!! warning "Unverified"
-    Cigna (secondary sources say `U` + 8 digits + 2-digit suffix), Oxford as distinct from UnitedHealthcare, whether AmeriHealth prints the prefix as part of the ID, NJ FamilyCare's 12-digit ID, and every carrier's claim-number format.
+    Cigna (secondary sources say `U` + 8 digits + 2-digit suffix), Oxford as distinct from UnitedHealthcare, whether AmeriHealth prints the prefix as part of the ID, NJ FamilyCare's 12-digit ID, every carrier's claim-number format, and the generic recognizer's recall and precision on real documents.
 
 ## Open
 
 - Test each submitter-side path above on a real EOB and an itemized bill, on an iPhone, an Android phone, and a desktop; then write the one-screen illustrated guide per device.
-- Run Presidio with the carrier patterns on redacted and unredacted samples and measure what it misses.
+- Run Presidio with the carrier patterns on redacted and unredacted samples; record recall and precision per recognizer, with the false negatives and false positives listed, and set the human-review posture from the numbers.
 - Confirm the Cigna and Oxford identifier formats.

@@ -11,17 +11,17 @@ It binds providers, insurers, and their business associates. A resident sharing 
 
 ## New Jersey law
 
-The Identity Theft Prevention Act (N.J.S.A. 56:8-161 and following) defines personal information (Social Security, driver's licence, and account numbers with access codes, later user names and passwords) and sets breach-notification duties. The design keeps none of these, which is the cheapest compliance.
+The Identity Theft Prevention Act (N.J.S.A. 56:8-161 and following) defines personal information (Social Security, driver's licence, and account numbers with access codes, later usernames and passwords) and sets destruction and breach-notification duties for records in an entity's custody. The published record keeps none of these. The intake path does, briefly: a submitted original may carry identifiers the submitter missed, and it sits on the homelab for up to 30 days before deletion. For that window the design treats the statute as applying: encrypted at rest, access limited to the keeper, deletion on schedule and logged, and a breach-notification plan for the window written before the form opens.
 
 !!! warning "Unverified"
     The statute cite, and whether the Consumer Fraud Act or New Jersey's newer privacy statutes add duties.
 
 ## Public files
 
-Prices are facts and facts are not copyrightable. The hospital rule requires the files to be accessible free of charge, without a login or personal information, and in machine-readable form; the insurer rule has an equivalent. Hospital website terms of service may purport to restrict automated access. Note them, cite the rule, proceed.
+Prices are facts and facts are not copyrightable. The hospital rule requires the files to be accessible free of charge, without a login or personal information, and in machine-readable form; the insurer rule has an equivalent. Hospital website terms of service may purport to restrict automated access. The collector records each site's terms as it finds them and behaves like a polite reader of a file the rule requires to be public: it fetches the one file the hospital itself names in `cms-hpt.txt`, once a month, with an identifying user agent and a contact address, and it stops if asked. Collection beyond that posture, or from a site whose terms expressly forbid it, waits until the access language below is confirmed.
 
 !!! warning "Unverified"
-    45 CFR 180.50(d) for the hospital access language, and the equivalent Transparency in Coverage provision.
+    45 CFR 180.50(d) for the hospital access language, and the equivalent Transparency in Coverage provision. Confirming them is a research item; whether confirmation needs counsel or a read of the rule text is decided then.
 
 ## Defamation and accuracy
 
@@ -39,9 +39,14 @@ No third-party analytics, or server-side counts at most. No cookies, no embeds. 
 
 A 501(c)(3) educational purpose fits publishing public data and explaining it. The asset-lock language from the ledger's services page applies to any data or funds. A board of residents.
 
+!!! warning "Unverified"
+    Whether this activity qualifies under 501(c)(3), and how an asset lock is written so it binds this site's data and funds, are counsel questions. Nothing here relies on the answer yet.
+
 ## Open
 
 - Counsel on the HIPAA reading before Layer D's form opens.
+- Counsel on the nonprofit qualification and the asset-lock drafting before the organization is formed.
+- Write the breach-notification plan for the 30-day retention window before the form opens.
 - Confirm the New Jersey statutes and whether newer privacy law applies.
 - Draft the terms, consent text, and disclaimers.
 - Whether the ledger and this site share an entity.

@@ -15,11 +15,11 @@ How a resident's bill gets from their phone to an extracted record, with nobody 
 
 ```mermaid
 sequenceDiagram
-    participant R as Resident
+    participant R as Resident's device
     participant G as Receiver (GKE)
     participant H as Homelab (tailnet)
-    R->>G: upload redacted PDF/photo + consent tick
-    G->>G: encrypt to homelab public key, discard plaintext
+    R->>R: redact; encrypt in the browser to the homelab public key
+    R->>G: upload ciphertext + consent tick
     G-->>R: code card (withdrawal + follow-up), no account
     H->>G: pull ciphertext over Tailscale
     H->>H: decrypt, OCR, PII pass, human review, extract record
@@ -27,7 +27,7 @@ sequenceDiagram
     H->>H: delete original after 30 days; record notes deletion
 ```
 
-The receiver is small and boring on purpose: accept a file, encrypt it, issue a code, wait to be pulled from. It never decrypts and never stores a key that could.
+Encryption happens on the resident's device, in the browser, with the homelab's public key embedded in the form page (WebCrypto or a sealed-box library; chosen at M0.5). The receiver never holds plaintext: it accepts a ciphertext blob, issues a code, and waits to be pulled from. It is small and boring on purpose, and its configuration contains the public key only. If a browser cannot run the encryption step, the form says so and points to the in-person path rather than falling back to a plaintext upload.
 
 ## Codes, not accounts
 

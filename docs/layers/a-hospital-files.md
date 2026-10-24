@@ -47,7 +47,7 @@ The tables and where they come from are on [Sources and projects](../reference/s
 
 ## What A cannot show
 
-Freestanding imaging and surgery centers, physician offices, independent labs, urgent care. The hospital rule binds facilities licensed as hospitals and does not reach them. Until [Layer B](b-insurer-files.md), Layer A publishes the facility list for these, scraped with its search date from the New Jersey Department of Health's ambulatory care facility search, with each center's posted cash price where it posts one and Medicare's Procedure Price Lookup figures for the same scan in a hospital department versus a freestanding setting. That gives a parent the correct instinct, which is that the freestanding center is usually far cheaper, before the negotiated prices arrive.
+Freestanding imaging and surgery centers, physician offices, independent labs, urgent care. The hospital rule binds facilities licensed as hospitals and does not reach them. Until [Layer B](b-insurer-files.md), Layer A publishes the facility list for these, scraped with its search date from the New Jersey Department of Health's ambulatory care facility search, with each center's posted cash price where it posts one and Medicare's Procedure Price Lookup figures for the same scan in a hospital department versus a freestanding setting. The Medicare figures are national averages, and they show Medicare paying hospital departments more than freestanding centers for the same scan; whether Essex commercial prices follow the same pattern, and by how much, is exactly what Layer B answers. Until then the page says that, and no more.
 
 !!! warning "Unverified"
     Scope of the hospital rule (45 CFR 180.20) and the Department of Health facility search's terms of use.

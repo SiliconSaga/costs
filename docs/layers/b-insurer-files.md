@@ -36,7 +36,7 @@ Raw monthly files per carrier of one to two terabytes in the current format. Kee
 
 ## Cross-check
 
-The same negotiated rate appears in the hospital's file and in the insurer's file. Where they disagree, that is a finding. The disagreement rate per facility and carrier is published.
+The same negotiated rate should appear in the hospital's file and in the insurer's file. Where it does not, that is a finding, but only after both rows have been matched on the same thing. The match key: the hospital's Type 2 NPI (and TIN where the insurer file groups by it) against the provider reference; billing code, code type, and modifiers; billing class and setting; the insurer's network mapped to the hospital file's payer and plan through `payers.yaml`; rate type restricted to dollar-valued negotiated rates on both sides, so percentage and algorithm rows are excluded; and overlapping effective dates, by the two files' own dates. Rows that cannot be matched on every element are counted as unmatched and reported as such, not as disagreements. The disagreement rate per facility and carrier is published over matched rows only, beside the unmatched count, with the normalisation rules on the methods page.
 
 ## Open
 

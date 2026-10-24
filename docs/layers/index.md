@@ -6,7 +6,7 @@ The work splits into four layers by data source. They are lettered by the order 
 |---|---|---|---|
 | [C](c-explainers.md) | Explainers and curated links | Existing publishers, Medicare lookups, the state facility search | First |
 | [A](a-hospital-files.md) | Hospital negotiated and cash prices | Each hospital's CMS-template machine-readable file (45 CFR Part 180) | Second |
-| [D](d-submitted-bills.md) | Submitted bills: what people actually paid | Residents' explanations of benefits and itemized bills, redacted | A trickle from near the start; grows with the audience |
+| [D](d-submitted-bills.md) | Submitted bills: what residents were billed and what their plans paid, as reported | Residents' explanations of benefits and itemized bills, redacted | A trickle from near the start; grows with the audience |
 | [B](b-insurer-files.md) | Insurer in-network rates for every Essex provider, including freestanding imaging and surgery centers | Each carrier's Transparency in Coverage in-network files | When the homelab box is ready |
 
 ## Why this order

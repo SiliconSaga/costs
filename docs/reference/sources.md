@@ -26,7 +26,10 @@ Government. National-average Medicare payment and beneficiary copay for about 3,
 
 ### NJ Hospital Price Compare
 
-New Jersey Hospital Association. Launched 2007 to show hospital **charges** by diagnosis, which the association itself called a sticker price. **Defunct** as of October 2026: the site refuses connections and the association's page describing it returns not found. Hospital websites still cite it. No retirement notice found.
+New Jersey Hospital Association. Launched 2007 to show hospital **charges** by diagnosis, which the association itself called a sticker price. Hospital websites still cite it.
+
+!!! warning "Unverified"
+    Appears unavailable as of October 23, 2026: the site refuses connections and the association's page describing it returns not found. No retirement notice found, so whether it is retired or merely down is unconfirmed.
 
 ### ClearHealthCosts
 
@@ -88,7 +91,7 @@ Surveyed 2026-10-23 against GitHub, npm, and PyPI. The short version: the offici
 
 ### DuckDB
 
-`read_json` must materialise a whole top-level object, bounded by `maximum_object_size` (default 16 MiB), so pointing it at a multi-gigabyte single-object insurer file does not work and even sub-gigabyte files are memory-hungry. The working pattern is a pre-splitter (`ijson` or `jq -c '.in_network[]'`) emitting gzipped newline-delimited JSON per top-level array, then `read_ndjson` in parallel and `UNNEST` to Parquet. Hospital JSON files have the same shape but are tens to hundreds of megabytes, where raising the limit usually suffices. Hospital CSV reads directly with `skip=2` for the metadata rows; wide files need their `standard_charge|payer|plan|field` headers parsed and unpivoted. See [Pipeline and data](../architecture/pipeline.md).
+`read_json` must materialise a whole top-level object, bounded by `maximum_object_size` (default 16 MiB), so pointing it at a multi-gigabyte single-object insurer file does not work and even sub-gigabyte files are memory-hungry. The working pattern is a streaming pre-splitter (`ijson`, or `jq --stream`; plain `jq` loads the whole document) emitting gzipped newline-delimited JSON per top-level array, then `read_ndjson` in parallel and `UNNEST` to Parquet. Hospital JSON files have the same shape but are tens to hundreds of megabytes, where raising the limit usually suffices. Hospital CSV reads directly with `skip=2` for the metadata rows; wide files need their `standard_charge|payer|plan|field` headers parsed and unpivoted. See [Pipeline and data](../architecture/pipeline.md).
 
 ### Supporting data
 

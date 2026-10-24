@@ -7,7 +7,7 @@
 | **M0.5** | Topology spike: a dummy file through GKE receiver → Tailscale → homelab → Parquet → Pages build. No real data, no gigabytes. Proves the encrypted hop, key handling, deletion, and build trigger. | A current homelab node, Tailscale, a GKE namespace |
 | **M1** | Layer C live: Sources and projects, the first explainers, the methods page. Layer A spike: one hospital, ten codes, one procedure page rendered from a Parquet file. The price site's generator decided. | M0.1 |
 | **M2** | Layer A for all seven hospitals and the full code list, with benchmarks, facility pages, the county overview, and the methods page. The yearly county table lands on the ledger's services page. | M1, research on facilities, codes, benchmark |
-| **M3** | Layer D instructions page, consent text, and in-person intake; first submissions processed by hand. | Redaction research, counsel on HIPAA reading |
+| **M3** | Layer D instructions page, consent text, and in-person intake; first submissions processed by hand. | M2, redaction research, counsel on HIPAA reading |
 | **M4** | Homelab box online with storage; the receiver and the form open. | M0.5, hardware |
 | **M5** | Layer B spike: one carrier, one network, Essex NPIs only, merged into the procedure pages. | M4, parser evaluation |
 | **M6** | Layer B for all major carriers; the hospital-versus-insurer cross-check published. | M5 |
@@ -27,6 +27,8 @@ gantt
     M4 box + form         :m4, after m05, 60d
     M5 B spike            :m5, after m4, 30d
     M6 B complete         :m6, after m5, 60d
+    section Beyond
+    M7 second county      :m7, after m2, 30d
 ```
 
 The dates on the chart are durations for shape, not commitments. The one external gate is hardware for M4; everything before it runs on what exists.

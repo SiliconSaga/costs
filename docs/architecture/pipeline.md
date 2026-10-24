@@ -44,7 +44,7 @@ A missing file is `fail`: absence is the answer. An unreadable file is `unmeasur
 
 **Hospital JSON.** One top-level object with a `standard_charge_information` array, typically tens to hundreds of megabytes; DuckDB's `read_json` handles it once `maximum_object_size` is raised.
 
-**Insurer JSON.** One top-level object of many gigabytes. DuckDB's reader must hold the whole object, so it is not pointed at these files. A pre-splitter (`ijson`, or `jq -c '.in_network[]'`) emits gzipped newline-delimited JSON per top-level array; DuckDB reads that in parallel with `read_ndjson` and unnests to Parquet. Or one of the streaming parsers on [Sources and projects](../reference/sources.md#insurer-side) writes Parquet directly.
+**Insurer JSON.** One top-level object of many gigabytes. DuckDB's reader must hold the whole object, so it is not pointed at these files. A streaming pre-splitter (`ijson` with the yajl backend, or `jq --stream` with a reducer; plain `jq` parses the whole document first) emits gzipped newline-delimited JSON per top-level array; DuckDB reads that in parallel with `read_ndjson` and unnests to Parquet. Or one of the streaming parsers on [Sources and projects](../reference/sources.md#insurer-side) writes Parquet directly.
 
 **Every row** carries the source file URL, SHA-256, retrieval date, the file's own `last_updated_on`, and the template or schema version. Raw and normalised code columns sit side by side.
 

@@ -36,7 +36,7 @@ Plain-words definitions for the terms the tables use. Each table links the term 
 : The file a hospital or insurer must post under the transparency rules, in a format a program can read.
 
 **Medicare rate**
-: What Medicare pays for the same service. Used here as the benchmark because it is public and computed the same way everywhere.
+: What Medicare pays for the same service. Used here as the benchmark because it is public and follows one published method: a national rate adjusted for the local wage index and the setting, so two facilities in the same area are compared on the same footing.
 
 **Negotiated rate**
 : The price a specific insurer and a specific provider agreed to for a specific service.
@@ -48,7 +48,7 @@ Plain-words definitions for the terms the tables use. Each table links the term 
 : A price divided by Medicare's rate for the same service. 200% means twice what Medicare pays.
 
 **Shoppable service**
-: A service a patient can schedule in advance; CMS lists 70 that every hospital's file must include.
+: A service a patient can schedule in advance. 45 CFR 180.60 names 70 that every hospital must display, and the hospital picks the rest of its 300.
 
 ## Open
 

@@ -1,6 +1,6 @@
 # Research
 
-The roll-up of every page's Open section. Each item names the page it lands on; the finding goes there, not here. An item is done when its Unverified box is gone and this list no longer carries it.
+The roll-up of every page's Open section. Each item names the page it lands on; the finding goes there, not here. An item is done when its page's Unverified box is gone; it stays here ticked and dated, so the list is also the record of what was checked and when.
 
 ## Regulatory
 
@@ -43,6 +43,10 @@ The roll-up of every page's Open section. Each item names the page it lands on; 
 - [ ] HIPAA reading with counsel before the form opens → [Legal](../trust/legal.md)
 - [ ] New Jersey statutes; newer privacy law → [Legal](../trust/legal.md)
 - [ ] Draft terms, consent text, disclaimers → [Legal](../trust/legal.md)
+
+## Hardware
+
+- [ ] When the homelab box is bought, and its spec (fast NVMe scratch and cores over RAM) → [Milestones](milestones.md), [Layer B](../layers/b-insurer-files.md)
 
 ## Organization
 
