@@ -38,7 +38,7 @@ Everything static and public: the price site and this design site. Built by GitH
 
 ## GitHub Actions
 
-Actions touches the **hospital** files only: small, public, and served from the hospitals' own sites. The monthly job downloads each file, records URL, SHA-256, and date in `data/manifest/hospital.json`, runs the validator, attaches the raw file to a release, rebuilds the derived JSON, and commits. Actions never reaches the tailnet and never sees an insurer file or a submitted document.
+Actions touches the **hospital** files only: small, public, and served from the hospitals' own sites. The monthly job is planned for M1; the only workflow in the repository today builds this site. It downloads each file, records URL, SHA-256, and date in `data/manifest/hospital.json`, runs the validator, attaches the raw file to a release, rebuilds the derived JSON, and commits. Actions never reaches the tailnet and never sees an insurer file or a submitted document.
 
 ## GKE
 

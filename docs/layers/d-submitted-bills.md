@@ -12,7 +12,7 @@ Provider (facility name and NPI where known), facility type, procedure codes and
 
 ## What is never published
 
-Names, member and subscriber IDs, claim numbers, dates of birth, addresses, account numbers, diagnosis codes (dropped by default; in a small town they identify people), the names of clinicians or staff, and the original image or PDF in any form. Originals are deleted after extraction on a fixed schedule, and the extraction record notes the deletion.
+Names, member and subscriber IDs, claim numbers, dates of birth, addresses, account numbers, diagnosis codes (dropped by default; in a small town they identify people), the names of clinicians or staff, and the original image or PDF in any form. Originals are deleted 30 days after submission, the retention window every page of this design uses, and the extraction record notes the deletion.
 
 ## Small-town re-identification
 
@@ -30,5 +30,4 @@ A running count of submissions and facilities covered. A quarterly "what the bil
 
 - Confirm the suppression threshold (proposal: five contributors) and which fields define a group.
 - Decide whether to show individual submitted rows or only aggregates while counts are small; the suppression rule decides most of this.
-- Confirm the deletion schedule for originals. Proposal: 30 days.
 - Hands-on test of the redaction paths on a real EOB; see [Redaction](../trust/redaction.md). A volunteer's own Cigna explanation of benefits is the first test document, with the volunteer's written consent to that use, handled exactly as a submission would be: on the homelab, through our pass, never in a third-party tool, Git, or anything published, and deleted within the same retention window. It also makes Cigna the first carrier whose identifier and claim formats are confirmed from a real document. Anything that must be shared or committed, a fixture for a test for instance, is synthetic.
