@@ -99,4 +99,4 @@ Publicly documented formats, for the pattern pass. The candidate design is a gen
 
 - Test each submitter-side path above on a real EOB and an itemized bill, on an iPhone, an Android phone, and a desktop; then write the one-screen illustrated guide per device.
 - Run Presidio with the carrier patterns on redacted and unredacted samples; record recall and precision per recognizer, with the false negatives and false positives listed. The numbers set triage order and what the reviewer is warned to look for; the human look before publication is mandatory whatever they say.
-- Confirm the Cigna and Oxford identifier formats. Cigna first, from a volunteer's own card and explanation of benefits.
+- Confirm the Cigna and Oxford identifier formats. Cigna first, from a volunteer's own card and explanation of benefits, used with their written consent and handled as any submission is: on the homelab, through the pass above, never in a third-party tool, Git, or anything published, deleted within the retention window. Only the format pattern is recorded; a committed test fixture is synthetic.

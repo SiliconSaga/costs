@@ -17,10 +17,13 @@ pipeline/
   benchmark/         # Medicare OPPS / IPPS / PFS joins
   derive/            # Parquet -> per-procedure and per-facility JSON; county overview; diff report
 data/
+  manifest/
+    hospital.json    # written only by the GitHub Action
+    insurer.json     # written only by the homelab's pull requests
   derived/           # committed JSON the site reads (or release assets when large)
 ```
 
-Raw files live on the homelab and are attached as release assets, never committed. Their URL, SHA-256, and retrieval date are recorded in `data/manifest.json`.
+Raw files live on the homelab and are attached as release assets, never committed. Their URL, SHA-256, and retrieval date are recorded in `data/manifest/`, one file per source flow with one writer each, so the Action and the homelab never edit the same file; see [System overview](overview.md#homelab).
 
 ## Schedule
 

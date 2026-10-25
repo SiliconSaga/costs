@@ -31,7 +31,7 @@ Essex is a value in a configuration file. Everything that names a county, a faci
 
 ## Privacy by default
 
-No accounts, no tracking, no cookies, and nothing on a page that makes a reader's browser contact anyone but us: no third-party fonts, scripts, embeds, or analytics. Our own page counts are fine (GitHub's repository traffic view today; our own server's logs if the site ever moves), because they run on our side and set nothing in the browser. This design site uses system fonts and self-hosts its diagram library at build time for the same reason. Submitted documents never enter Git and are never published in any form. The repository runs the GDD PII guard, with a `.gdd-pii-allow` listing only addresses meant to be public.
+No accounts, no tracking, no cookies, and nothing on a page that makes a reader's browser contact anyone but us: no third-party fonts, scripts, embeds, or analytics. There is no page counter today: GitHub's traffic view counts visits to the repository, not to the published site, and we do not pretend otherwise. If a counter is ever added it runs on our side (our own server's logs if the site moves off Pages) and sets nothing in the browser. This design site uses system fonts and self-hosts its diagram library at build time for the same reason. Submitted documents never enter Git and are never published in any form. The repository runs the GDD PII guard, with a `.gdd-pii-allow` listing only addresses meant to be public.
 
 ## Not selling anything
 
