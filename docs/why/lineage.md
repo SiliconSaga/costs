@@ -2,7 +2,7 @@
 
 ## The schools ledger
 
-This site grew out of the West Orange schools ledger at [schools.frontstate.org](https://schools.frontstate.org). The ledger keeps a sourced public record of one district's budget decisions, and its [How Services Could Work](https://schools.frontstate.org/ledger/services) page argues that of the three places health money goes, prices are the one a community can start on now: the federal price-transparency rules put hospital and insurer files into the open ([Layer A](../layers/a-hospital-files.md), [Layer B](../layers/b-insurer-files.md)), unevenly in practice, so the work is finding, assessing, and reading them rather than asking anyone's permission. That page proposes a yearly local price table; this site does the reading and produces the table, and the ledger cites it.
+This site grew out of the West Orange schools ledger at [schools.frontstate.org](https://schools.frontstate.org). The ledger keeps a sourced public record of one district's budget decisions, and its [How Services Could Work](https://schools.frontstate.org/ledger/services) page argues that of the three places health money goes, prices are the one a community can start on now: the federal price-transparency rules put hospital and insurer files into the open ([Layer A](../layers/a-hospital-files.md), [Layer B](../layers/b-insurer-files.md)), unevenly in practice, so the work is finding, assessing, and reading them rather than asking anyone's permission. That page proposes a yearly local price table; this site will do the reading and produce the table for the ledger to cite.
 
 The evidence standard (record, statement, press) and the habit of publishing requests and responses in full come from the ledger's design.
 
