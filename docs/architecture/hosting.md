@@ -14,10 +14,10 @@ Static, built from the derived JSON. Generator undecided: this site's mkdocs cou
 
 ## Domain
 
-A `frontstate.org` subdomain, beside [schools.frontstate.org](https://schools.frontstate.org): Front State is the civic home of both sites. The leftmost label follows the component's name, which is under review (see [Lineage](../why/lineage.md#naming)); `prices.frontstate.org` if the name stays. Until the name is settled the GitHub Pages default URL serves, and the switch is a CNAME file plus one DNS record.
+`costs.frontstate.org`, beside [schools.frontstate.org](https://schools.frontstate.org): Front State is the civic home of both sites, and the label is the component's name (see [Lineage](../why/lineage.md#naming)). Until the record exists the GitHub Pages default URL serves; the switch is a `CNAME` file in `docs/`, one DNS record, and the repository's Pages source set to GitHub Actions so the deploy job lands.
 
 ## Open
 
 - Whether the civic repositories move from SiliconSaga to a Front State GitHub organization, and when; whether Front State becomes a nonprofit (see [Legal and privacy](../trust/legal.md#nonprofit-later)).
-- The component's name, before the subdomain is registered.
+- Register `costs.frontstate.org` and switch the Pages source to Actions.
 - The price site's generator, at M1.

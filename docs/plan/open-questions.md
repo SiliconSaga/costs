@@ -2,7 +2,6 @@
 
 Questions no research item answers; they need a decision by the keeper, and some need the project to exist for a while first.
 
-- **The component's name**: `prices`, `costs`, or another; decided before the subdomain is registered. See [Lineage](../why/lineage.md#naming).
 - **Whether the civic repositories move** from SiliconSaga to a Front State GitHub organization, and whether Front State becomes a nonprofit.
 - **Submissions from outside Essex** from the start? Proposal: accept, publish once that county has its own facility list.
 - **Individual rows or aggregates only** once a group clears the suppression threshold. Default: aggregates.

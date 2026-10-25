@@ -54,5 +54,6 @@ The roll-up of every page's Open section. Each item names the page it lands on; 
 - [x] One entity or two; the civic organization's name → Front State is the home of both sites; [Hosting](../architecture/hosting.md), done 2026-10-24
 - [ ] Nonprofit; whether the repositories move to a Front State GitHub organization → [Hosting](../architecture/hosting.md), [Legal](../trust/legal.md)
 - [x] Domain → a `frontstate.org` subdomain, label pending the name; [Hosting](../architecture/hosting.md), done 2026-10-24
-- [ ] The component's name → [Lineage](../why/lineage.md#naming)
+- [x] The component's name → `costs`; [Lineage](../why/lineage.md#naming), done 2026-10-24
+- [ ] Register `costs.frontstate.org`; Pages source to Actions → [Hosting](../architecture/hosting.md)
 - [ ] Draft the public-records asks and park them → [Public-records asks](records-requests.md)

@@ -16,8 +16,8 @@ Nothing on this site argues for Front State or Demicracy. It links to the ledger
 
 The site is titled "Cost of Care"; the component carries a shorter name so it can grow into other local costs (insurance premiums, utilities, property tax, child care) without a rename, and that name is also the subdomain under `frontstate.org`. It carries no Norse name, unlike the infrastructure components around it, because the civic components may move to a Front State GitHub organization.
 
-The working name is `prices`, and it is under review before the subdomain is registered. The objection: `prices.frontstate.org` reads like the pricing page of a paid service, when the site analyses what care actually costs and how much each party charges or covers. `costs` is the leading alternative; it matches the title and extends naturally ("Cost of Care", "Cost of Child Care"). Other labels considered have a second meaning that gets in the way: `bills` reads as legislation on a civic domain, `rates` as interest or tax rates, `charges` as the hospital's own list price and as criminal charges, `care` as caregiving services.
+The name is `costs`, chosen over `prices` on 2026-10-24: a `prices` subdomain reads like the pricing page of a paid service, when the site analyses what care actually costs and how much each party charges or covers. `costs` matches the title and extends naturally ("Cost of Care", "Cost of Child Care"). Other labels considered have a second meaning that gets in the way: `bills` reads as legislation on a civic domain, `rates` as interest or tax rates, `charges` as the hospital's own list price and as criminal charges, `care` as caregiving services.
 
 ## Open
 
-- The component's name, decided before the subdomain is registered. See [Hosting](../architecture/hosting.md#domain).
+- Whether the civic repositories move from SiliconSaga to a Front State GitHub organization. See [Hosting](../architecture/hosting.md).

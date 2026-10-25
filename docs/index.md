@@ -22,4 +22,4 @@ Every page ends with an **Open** section listing what research must still settle
 
 ## Open
 
-- The component's name, and with it the `frontstate.org` subdomain, is under review; see [Lineage](why/lineage.md#naming).
+- `costs.frontstate.org` is decided but not yet registered; the GitHub Pages URL serves until it is. See [Hosting](architecture/hosting.md#domain).
