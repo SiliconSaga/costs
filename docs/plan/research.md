@@ -35,8 +35,8 @@ The roll-up of every page's Open section. Each item names the page it lands on; 
 
 - [ ] Hands-on test of the redaction paths on a real EOB and itemized bill, per device; then the illustrated guide → [Redaction](../trust/redaction.md)
 - [ ] Run Presidio with the carrier patterns on samples; measure misses → [Redaction](../trust/redaction.md)
-- [ ] Confirm Cigna and Oxford member-ID formats; every carrier's claim-number format → [Redaction](../trust/redaction.md)
-- [ ] Define the suppression rule → [Layer D](../layers/d-submitted-bills.md)
+- [ ] Confirm Cigna and Oxford member-ID formats, Cigna first from a volunteer's own documents; every carrier's claim-number format → [Redaction](../trust/redaction.md)
+- [ ] Confirm the suppression rule's threshold and coarsening order → [Layer D](../layers/d-submitted-bills.md)
 
 ## Legal
 
@@ -46,10 +46,13 @@ The roll-up of every page's Open section. Each item names the page it lands on; 
 
 ## Hardware
 
-- [ ] When the homelab box is bought, and its spec (fast NVMe scratch and cores over RAM) → [Milestones](milestones.md), [Layer B](../layers/b-insurer-files.md)
+- [x] The box's shape as planning guidance: tiers of storage, memory, cores, virtualization → [Homelab box](../architecture/homelab.md), done 2026-10-24
+- [ ] Confirm the shape against the Layer B measurement (one carrier file parsed end to end, throughput and peak memory recorded) before buying → [Homelab box](../architecture/homelab.md), [Layer B](../layers/b-insurer-files.md)
 
 ## Organization
 
-- [ ] One entity or two; the civic organization's name; nonprofit → [Hosting](../architecture/hosting.md), [Legal](../trust/legal.md)
-- [ ] Domain → [Hosting](../architecture/hosting.md)
+- [x] One entity or two; the civic organization's name → Front State is the home of both sites; [Hosting](../architecture/hosting.md), done 2026-10-24
+- [ ] Nonprofit; whether the repositories move to a Front State GitHub organization → [Hosting](../architecture/hosting.md), [Legal](../trust/legal.md)
+- [x] Domain → a `frontstate.org` subdomain, label pending the name; [Hosting](../architecture/hosting.md), done 2026-10-24
+- [ ] The component's name → [Lineage](../why/lineage.md#naming)
 - [ ] Draft the public-records asks and park them → [Public-records asks](records-requests.md)

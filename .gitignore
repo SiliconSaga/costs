@@ -1,5 +1,6 @@
-# mkdocs build output
+# mkdocs build output and the privacy plugin's download cache
 site/
+.cache/
 
 # Python
 .venv/

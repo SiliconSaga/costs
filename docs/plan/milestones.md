@@ -35,4 +35,4 @@ The dates on the chart are durations for shape, not commitments. The one externa
 
 ## Open
 
-- When the homelab box is bought, and its spec (fast NVMe scratch and cores over RAM).
+- When the homelab box is bought; its shape is on [Homelab box](../architecture/homelab.md), to be confirmed by the Layer B measurement.

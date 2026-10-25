@@ -8,6 +8,8 @@ copyright: Text CC BY 4.0. Data, when there is data, CC0.
 
 theme:
   name: material
+  # System fonts: the theme's default loads Roboto from Google Fonts on every page view.
+  font: false
   features:
     - navigation.sections
     - navigation.indexes
@@ -51,6 +53,7 @@ nav:
       - Intake path: architecture/intake.md
       - Integrations: architecture/integrations.md
       - Hosting: architecture/hosting.md
+      - Homelab box: architecture/homelab.md
   - Trust:
       - Legal and privacy: trust/legal.md
       - Redaction: trust/redaction.md
@@ -90,3 +93,6 @@ markdown_extensions:
 
 plugins:
   - search
+  # Downloads every external asset into the build and rewrites the reference, so a reader's browser contacts nothing
+  # but this site. That includes the Mermaid library the theme would otherwise fetch from unpkg on diagram pages.
+  - privacy

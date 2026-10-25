@@ -31,11 +31,11 @@ Essex is a value in a configuration file. Everything that names a county, a faci
 
 ## Privacy by default
 
-No accounts, no tracking, no cookies, no third-party embeds. Submitted documents never enter Git and are never published in any form. The repository runs the GDD PII guard, with a `.gdd-pii-allow` listing only addresses meant to be public.
+No accounts, no tracking, no cookies, and nothing on a page that makes a reader's browser contact anyone but us: no third-party fonts, scripts, embeds, or analytics. Our own page counts are fine (GitHub's repository traffic view today; our own server's logs if the site ever moves), because they run on our side and set nothing in the browser. This design site uses system fonts and self-hosts its diagram library at build time for the same reason. Submitted documents never enter Git and are never published in any form. The repository runs the GDD PII guard, with a `.gdd-pii-allow` listing only addresses meant to be public.
 
 ## Not selling anything
 
-Links to the ledger's services page where relevant. No Front State or Demicracy pitch; those have their own sites.
+This is a Front State project and says so, but it does not argue for Front State or for Demicracy; those have their own sites. Links to the ledger's services page where a reader would want the argument.
 
 ## Honest about what we could not check
 

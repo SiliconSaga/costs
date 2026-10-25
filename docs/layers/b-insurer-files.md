@@ -21,7 +21,7 @@ Layer B is gated on hardware, not on the rule: the current files are usable now 
 
 ## Approach
 
-A spike first: one carrier, one network, one month, on the homelab.
+A spike first: one carrier, one network, one month, on the homelab. The carrier is Cigna, because a volunteer holds a Cigna plan and can check the plan-to-network mapping, the hardest part of this data, against a real card and explanation of benefits rather than against the file alone.
 
 1. Build an Essex NPI list from the NPPES bulk download filtered by practice-location county and ZIP, joined to the Department of Health facility list and to the Type 2 NPIs found in the hospital files.
 2. Parse the carrier's table of contents, keep the in-network files whose plans are New Jersey-relevant, and dedupe by URL.
@@ -32,7 +32,7 @@ Candidates to evaluate before writing anything, in order: `AccessMRF/tic-mrf-par
 
 ## Storage and compute
 
-Raw monthly files per carrier of one to two terabytes in the current format. Keep the last two months, archive the extracted Parquet, which is small. Fast fiber makes the download a matter of hours; parsing is the bottleneck, so the box wants fast NVMe scratch and cores more than it wants RAM. Results flow to the same JSON the site reads. GitHub Actions never touches a raw insurer file. See [System overview](../architecture/overview.md).
+Raw monthly files per carrier of one to two terabytes compressed in the current format. Keep the last two months, archive the extracted Parquet, which is small. Fast fiber makes the download a matter of hours; parsing is the bottleneck, so the box wants cores and a fast working tier more than it wants RAM, and the raw archive can sit on slow bulk disk because it is read once, sequentially. The full shape, with the estimates behind it, is on [Homelab box](../architecture/homelab.md). Results flow to the same JSON the site reads. GitHub Actions never touches a raw insurer file. See [System overview](../architecture/overview.md).
 
 ## Cross-check
 
@@ -43,6 +43,6 @@ The same negotiated rate should appear in the hospital's file and in the insurer
 - Which network names correspond to the plans local people actually hold; plan-name mapping is the hardest part of this data.
 - Whether Medicare Advantage and Medicaid lines are useful here.
 - Whether to touch the out-of-network allowed-amount files at all, which have been widely empty.
-- Measure one carrier's table-of-contents and one network file before sizing the box.
+- Measure Cigna's table-of-contents and one network file before sizing the box: compressed and expanded size, parse throughput per core, peak memory per parser.
 - Evaluate `tic-mrf-parser` and `cms-mrf-extractor` on that file.
 - Confirm the regulatory cite and the Medicaid managed-care question.

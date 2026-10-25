@@ -22,4 +22,4 @@ Every page ends with an **Open** section listing what research must still settle
 
 ## Open
 
-- The site's domain and the organization that will own the repository are undecided; see [Hosting](architecture/hosting.md).
+- The component's name, and with it the `frontstate.org` subdomain, is under review; see [Lineage](why/lineage.md#naming).

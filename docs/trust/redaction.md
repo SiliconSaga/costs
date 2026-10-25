@@ -16,7 +16,8 @@ An explanation of benefits or itemized bill carries both the identifiers that mu
 |---|---|
 | Patient and subscriber names, address, date of birth | Dates of service (we publish month and year only) |
 | Member ID, group number, claim number, patient account number, document reference number | Procedure codes (CPT, HCPCS) with modifiers and units; revenue codes on facility bills |
-| Provider name, address, NPI, and tax ID (we extract facility and NPI ourselves from the facility list, not from the submitter's document) | Billed, allowed, plan discount, plan paid, deductible, copay, coinsurance, not covered, patient responsibility |
+| Names of individual clinicians and their NPIs and tax IDs (the rendering physician, the anesthesiologist, the radiologist) | The facility's name: the hospital, center, or lab. It identifies the facility, not you, and we need it. You also pick the facility from our list when you submit, which is how we match the bill when the document names a billing entity rather than the place |
+| | Billed, allowed, plan discount, plan paid, deductible, copay, coinsurance, not covered, patient responsibility |
 | Barcodes and QR codes, which usually encode the member or claim ID | Network status; plan name and type; remark and reason codes |
 | Diagnosis codes, if the submitter prefers; we drop them anyway | |
 
@@ -98,4 +99,4 @@ Publicly documented formats, for the pattern pass. The candidate design is a gen
 
 - Test each submitter-side path above on a real EOB and an itemized bill, on an iPhone, an Android phone, and a desktop; then write the one-screen illustrated guide per device.
 - Run Presidio with the carrier patterns on redacted and unredacted samples; record recall and precision per recognizer, with the false negatives and false positives listed. The numbers set triage order and what the reviewer is warned to look for; the human look before publication is mandatory whatever they say.
-- Confirm the Cigna and Oxford identifier formats.
+- Confirm the Cigna and Oxford identifier formats. Cigna first, from a volunteer's own card and explanation of benefits.

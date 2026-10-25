@@ -34,7 +34,7 @@ flowchart TB
 
 ## GitHub Pages
 
-Everything static and public: the price site and this design site. Built by GitHub Actions from committed derived JSON or from release assets when the JSON outgrows the repository. No server-side code, no analytics beyond server-side counts at most.
+Everything static and public: the price site and this design site. Built by GitHub Actions from committed derived JSON or from release assets when the JSON outgrows the repository. No server-side code, and no analytics beyond our own page counts; see [Principles](../why/principles.md#privacy-by-default).
 
 ## GitHub Actions
 
@@ -48,7 +48,7 @@ What a compromise of the cluster exposes, stated separately: queued uploads stay
 
 ## Homelab
 
-Reachable only over Tailscale. The homelab **pulls** the terabyte insurer files on its own schedule from the carriers' public URLs, runs the DuckDB jobs, holds the document store with its deletion schedule and the private key, and pushes results outward as a pull request carrying Parquet, derived JSON, and manifest entries, using a token scoped to that repository. Nothing on it accepts inbound connections from the internet. Until the large box exists, any current k8s node in the house can run the receiver's pull side and the Layer A jobs; only Layer B needs the disks.
+Reachable only over Tailscale. The homelab **pulls** the terabyte insurer files on its own schedule from the carriers' public URLs, runs the DuckDB jobs, holds the document store with its deletion schedule and the private key, and pushes results outward as a pull request carrying Parquet, derived JSON, and manifest entries, using a token scoped to that repository. Nothing on it accepts inbound connections from the internet. Until the large box exists, any current k8s node in the house can run the receiver's pull side and the Layer A jobs; only Layer B needs the disks. What the box should be is on [Homelab box](homelab.md).
 
 ## Proving the shape before the data
 

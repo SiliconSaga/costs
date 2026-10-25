@@ -4,7 +4,7 @@ The posted files say what an insurer agreed to pay. A bill says what a family wa
 
 ## What people submit
 
-An explanation of benefits from the insurer, an itemized bill from the provider, a pharmacy receipt, or a good-faith estimate, as a photo or PDF. Redacted by the submitter first, following the [Redaction](../trust/redaction.md) instructions, and by us second.
+An explanation of benefits from the insurer, an itemized bill from the provider, a pharmacy receipt, or a good-faith estimate, as a photo or PDF, together with the facility picked from our [facility list](../reference/facilities.md) (on the consent slip in person; inside the encrypted payload on the form). The facility's name on the document is kept, since it is the facility's identity and not the submitter's; the names of individual clinicians are redacted. Redacted by the submitter first, following the [Redaction](../trust/redaction.md) instructions, and by us second.
 
 ## What is extracted and published
 
@@ -16,7 +16,7 @@ Names, member and subscriber IDs, claim numbers, dates of birth, addresses, acco
 
 ## Small-town re-identification
 
-Month precision, no diagnoses, and a suppression rule. An individual row is published only when at least a threshold number of records (proposal: five) share its facility, procedure, and plan type within the publication period; below that, the group is shown as a count and a median or is held until it fills, and widening the period is one way to let it fill, never a substitute for the threshold. A row that is alone even at a year's width is not published as a row. The principle is that the record protects the submitter before it protects precision.
+Month precision, no diagnoses, and a suppression rule. A group is the records that share a facility, procedure, and plan type within the publication period. Nothing about a group is published, not a row, not a count, not a median, until at least a threshold number of records (proposal: five) are in it, because a median of one is the submitted amount and a count of one says a neighbour was there. Below the threshold the group is held. Two things let it fill: widening the period, up to a year, and coarsening the group, dropping plan type first and then collapsing the procedure into its code group, each step applied only if the coarser group clears the threshold on its own. Neither is a substitute for the threshold. A record that is alone even at a year's width and the coarsest grouping stays in the overall running count of submissions and nowhere else. Once a group clears the threshold, individual rows within it are published only if the keeper has decided to show rows at all (see Open); the default is aggregates. The principle is that the record protects the submitter before it protects precision.
 
 ## Intake
 
@@ -31,4 +31,4 @@ A running count of submissions and facilities covered. A quarterly "what the bil
 - Confirm the suppression threshold (proposal: five) and which fields define a group.
 - Decide whether to show individual submitted rows or only aggregates while counts are small; the suppression rule decides most of this.
 - Confirm the deletion schedule for originals. Proposal: 30 days.
-- Hands-on test of the redaction paths on a real EOB; see [Redaction](../trust/redaction.md).
+- Hands-on test of the redaction paths on a real EOB; see [Redaction](../trust/redaction.md). A volunteer's own Cigna explanation of benefits is the first test document, which also makes Cigna the first carrier whose identifier and claim formats are confirmed from a real document.

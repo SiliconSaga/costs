@@ -10,6 +10,8 @@ How a resident's bill gets from their phone to an extracted record, with nobody 
 | A form that lands on the homelab through an encrypted hop | Ciphertext on GKE briefly; plaintext only on the homelab | **Next**, once the receiver exists. |
 | A dedicated email inbox | The mail provider | No. It makes a consumer mailbox a processor of health documents. |
 | GitHub issues, Discord, any chat bot, any public channel | A third party's logs and an agent's context | **Never.** |
+| From the household's own records, kept and redacted on a Demicracy node at home, sent through the same encrypted hop | The household, on its own machine | **Later.** The hop and the receiver are unchanged; what changes is that redaction happens where the records already live. See [Integrations](integrations.md#demicracy). |
+| Local drop-off to a community node: a Knarr-backed Matrix room run by neighbours on their own hardware, standing in for the receiver | That community's node, not a cloud | **Later, maybe.** For a community that trusts its own nodes over a third-party cloud. The payload stays encrypted to the homelab key either way. See [Integrations](integrations.md#knarr). |
 
 ## The encrypted hop
 
@@ -19,7 +21,7 @@ sequenceDiagram
     participant G as Receiver (GKE)
     participant H as Homelab (tailnet)
     R->>R: redact; encrypt in the browser to the homelab public key
-    R->>G: upload ciphertext + consent tick
+    R->>G: upload ciphertext (document, facility choice, consent)
     G-->>R: code card (withdrawal + follow-up), no account
     H->>G: pull ciphertext over Tailscale
     H->>H: decrypt, OCR, PII pass, human review, extract record
@@ -27,7 +29,7 @@ sequenceDiagram
     H->>H: delete original after 30 days; record notes deletion
 ```
 
-Encryption happens on the resident's device, in the browser, with the homelab's public key embedded in the form page (WebCrypto or a sealed-box library; chosen at M0.5). The receiver then holds only ciphertext: it accepts a blob, issues a code, and waits to be pulled from. It is small and boring on purpose, and its configuration contains the public key only. If a browser cannot run the encryption step, the form says so and points to the in-person path rather than falling back to a plaintext upload.
+Encryption happens on the resident's device, in the browser, with the homelab's public key embedded in the form page (WebCrypto or a sealed-box library; chosen at M0.5). Everything the resident tells us, the document, the facility they picked from the list, and the consent tick, goes inside the one encrypted payload, so the receiver never holds a facility name beside an upload time. The receiver then holds only ciphertext: it accepts a blob, issues a code, and waits to be pulled from. It is small and boring on purpose, and its configuration contains the public key only. If a browser cannot run the encryption step, the form says so and points to the in-person path rather than falling back to a plaintext upload.
 
 That guarantee is exactly as strong as the form page the resident loaded. A page served by a compromised receiver, or altered in transit, could swap the key or post plaintext elsewhere. So the form page is static and lives in Git, served from GitHub Pages rather than from the receiver, so every change to it is a reviewed commit; the public key's fingerprint is printed on the in-person materials and the site's methods page so a resident or a volunteer can compare; and the receiver is a separate origin that only accepts posts. None of that makes a browser upload as safe as handing a paper to the keeper at a meeting, and the instructions say so.
 
