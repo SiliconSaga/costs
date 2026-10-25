@@ -10,4 +10,4 @@ Questions no research item answers; they need a decision by the keeper, and some
 - **How far Ting stretches** to hold the bill codes and records before a sibling service is cleaner. Lean: stretch it.
 - **When the homelab box is bought**, and whether Layer B waits for it or starts on a smaller box with one carrier. The shape is on [Homelab box](../architecture/homelab.md).
 - **Whether raw insurer files are kept at all** after extraction, or only their hashes and the Parquet; this decides most of the box's disk.
-- **The price site's generator**, decided at M1.
+- **The costs site's generator**, decided at M1.
