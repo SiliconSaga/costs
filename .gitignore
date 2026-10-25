@@ -1,12 +1,10 @@
-# Jekyll local build output
-_site/
-.jekyll-cache/
-.jekyll-metadata
+# mkdocs build output and the privacy plugin's download cache
+site/
+.cache/
 
-# Bundler artifacts (only present if you decide to run Jekyll locally)
-.bundle/
-vendor/
-Gemfile.lock
+# Python
+.venv/
+__pycache__/
 
 # OS noise
 .DS_Store

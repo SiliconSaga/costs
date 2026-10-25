@@ -1,0 +1,98 @@
+site_name: Cost of Care
+site_description: Design and documentation for a public record of what health care costs in Essex County, New Jersey
+site_url: https://siliconsaga.github.io/prices/
+repo_url: https://github.com/SiliconSaga/prices
+repo_name: SiliconSaga/prices
+edit_uri: edit/main/docs/
+copyright: Text CC BY 4.0. Data, when there is data, CC0.
+
+theme:
+  name: material
+  # System fonts: the theme's default loads Roboto from Google Fonts on every page view.
+  font: false
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Why:
+      - Problem and audiences: why/problem.md
+      - Principles: why/principles.md
+      - Lineage: why/lineage.md
+  - Layers:
+      - Overview: layers/index.md
+      - C — Explainers and links: layers/c-explainers.md
+      - A — Hospital files: layers/a-hospital-files.md
+      - D — Submitted bills: layers/d-submitted-bills.md
+      - B — Insurer files: layers/b-insurer-files.md
+  - Architecture:
+      - System overview: architecture/overview.md
+      - Pipeline and data: architecture/pipeline.md
+      - Intake path: architecture/intake.md
+      - Integrations: architecture/integrations.md
+      - Hosting: architecture/hosting.md
+      - Homelab box: architecture/homelab.md
+  - Trust:
+      - Legal and privacy: trust/legal.md
+      - Redaction: trust/redaction.md
+      - Corrections and disputes: trust/corrections.md
+  - Reference:
+      - Facilities: reference/facilities.md
+      - Code list: reference/codes.md
+      - Sources and projects: reference/sources.md
+      - Glossary: reference/glossary.md
+  - Plan:
+      - Milestones: plan/milestones.md
+      - Research: plan/research.md
+      - Public-records asks: plan/records-requests.md
+      - Open questions: plan/open-questions.md
+
+# docs/plans/ holds dated first-ideas and implementation notes for agents; the site is current state only.
+exclude_docs: |
+  plans/
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  # Downloads every external asset into the build and rewrites the reference, so a reader's browser contacts nothing
+  # but this site. That includes the Mermaid library the theme would otherwise fetch from unpkg on diagram pages.
+  - privacy
