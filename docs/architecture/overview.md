@@ -5,7 +5,7 @@ Three tiers, each holding only what it must.
 ```mermaid
 flowchart TB
     subgraph pages[GitHub Pages · public, static]
-        site[Price site<br/>procedure, facility, county pages]
+        site[Costs site<br/>procedure, facility, county pages]
         docs[This design site]
     end
     subgraph gke[GKE · public endpoints, small databases]
@@ -34,7 +34,7 @@ flowchart TB
 
 ## GitHub Pages
 
-Everything static and public: the price site and this design site. Built by GitHub Actions from committed derived JSON or from release assets when the JSON outgrows the repository. No server-side code and no analytics; see [Principles](../why/principles.md#privacy-by-default).
+Everything static and public: the costs site and this design site. Built by GitHub Actions from committed derived JSON or from release assets when the JSON outgrows the repository. No server-side code and no analytics; see [Principles](../why/principles.md#privacy-by-default).
 
 ## GitHub Actions
 

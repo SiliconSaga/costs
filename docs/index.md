@@ -16,10 +16,10 @@ A public record of what health care costs in Essex County, New Jersey: what each
 Two conventions run through every page:
 
 !!! warning "Unverified"
-    A box like this marks a claim that has not been checked against a primary source. This design site shows them openly; the price site, where residents will read figures, publishes nothing that is still in one. Research clears the box and the claim stays, or removes both.
+    A box like this marks a claim that has not been checked against a primary source. This design site shows them openly; the costs site, where residents will read figures, publishes nothing that is still in one. Research clears the box and the claim stays, or removes both.
 
 Every page ends with an **Open** section listing what research must still settle on that page. The [Research](plan/research.md) page is the roll-up, so each finding has exactly one place to land.
 
 ## Open
 
-- The component's name, and with it the `frontstate.org` subdomain, is under review; see [Lineage](why/lineage.md#naming).
+- `costs.frontstate.org` is decided but not yet registered; the GitHub Pages URL serves until it is. See [Hosting](architecture/hosting.md#domain).

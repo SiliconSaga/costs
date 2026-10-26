@@ -1,8 +1,8 @@
 site_name: Cost of Care
 site_description: Design and documentation for a public record of what health care costs in Essex County, New Jersey
-site_url: https://siliconsaga.github.io/prices/
-repo_url: https://github.com/SiliconSaga/prices
-repo_name: SiliconSaga/prices
+site_url: https://siliconsaga.github.io/costs/
+repo_url: https://github.com/SiliconSaga/costs
+repo_name: SiliconSaga/costs
 edit_uri: edit/main/docs/
 copyright: Text CC BY 4.0. Data, when there is data, CC0.
 

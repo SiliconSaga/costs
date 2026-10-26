@@ -1,6 +1,6 @@
 # Facilities
 
-The acute-care hospitals in Essex County, with their owners, and the location of each one's machine-readable price file. This page becomes `config/facilities.yaml` and the per-facility pages of the price site. Freestanding centers join it with Layer A's facility list and get negotiated prices with Layer B.
+The acute-care hospitals in Essex County, with their owners, and the location of each one's machine-readable price file. This page becomes `config/facilities.yaml` and the per-facility pages of the costs site. Freestanding centers join it with Layer A's facility list and get negotiated prices with Layer B.
 
 ## Hospitals
 

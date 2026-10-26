@@ -5,7 +5,7 @@
 | **M0** | Design v0 written. Done 2026-10-22. | |
 | **M0.1** | This design site, with the research list distributed to its pages and [Sources and projects](../reference/sources.md) researched. | |
 | **M0.5** | Topology spike: a dummy file through GKE receiver → Tailscale → homelab → Parquet → Pages build. No real data, no gigabytes. Proves the encrypted hop, key handling, deletion, and build trigger. | A current homelab node, Tailscale, a GKE namespace |
-| **M1** | Layer C live: Sources and projects, the first explainers, the methods page. Layer A spike: one hospital, ten codes, one procedure page rendered from a Parquet file. The price site's generator decided. | M0.1 |
+| **M1** | Layer C live: Sources and projects, the first explainers, the methods page. Layer A spike: one hospital, ten codes, one procedure page rendered from a Parquet file. The costs site's generator decided. | M0.1 |
 | **M2** | Layer A for all seven hospitals and the full code list, with benchmarks, facility pages, the county overview, and the methods page. The yearly county table lands on the ledger's services page. | M1, research on facilities, codes, benchmark |
 | **M3** | Layer D instructions page, consent text, and in-person intake; first submissions processed by hand. | M2, redaction research, counsel on HIPAA reading |
 | **M4** | Homelab box online with storage; the receiver and the form open. | M0.5, hardware |
