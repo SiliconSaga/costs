@@ -2,7 +2,7 @@
 
 A public record of what health care costs in Essex County, New Jersey: what each hospital is paid by each insurer for common procedures, what Medicare pays for the same thing, what freestanding centers charge, and what residents were actually billed. Built from the files the hospitals and insurers are required to publish, with the scripts that turn them into tables kept here so anyone can reproduce a figure.
 
-The component name is generic on purpose. "Cost of Care" is the first section; other local costs can follow without a rename. The site will live at `costs.frontstate.org`.
+The component name is generic on purpose. "Cost of Care" is the first section; other local costs can follow without a rename. The site lives at [costs.frontstate.org](https://costs.frontstate.org/).
 
 **Status: design.** Nothing is published yet. The design lives at the repository's GitHub Pages site and in `docs/`; it is written to become the documentation of the running service as the pieces are built. Dated first-ideas and agent-facing implementation notes sit in `docs/plans/` and are not part of the site.
 

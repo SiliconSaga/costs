@@ -55,5 +55,5 @@ The roll-up of every page's Open section. Each item names the page it lands on; 
 - [ ] Nonprofit; whether the repositories move to a Front State GitHub organization → [Hosting](../architecture/hosting.md), [Legal](../trust/legal.md)
 - [x] Domain → `costs.frontstate.org`; [Hosting](../architecture/hosting.md), done 2026-10-24
 - [x] The component's name → `costs`; [Lineage](../why/lineage.md#naming), done 2026-10-24
-- [ ] Register `costs.frontstate.org`; Pages source to Actions → [Hosting](../architecture/hosting.md)
+- [x] Register `costs.frontstate.org`; Pages source to Actions → [Hosting](../architecture/hosting.md), done 2026-10-25
 - [ ] Draft the public-records asks and park them → [Public-records asks](records-requests.md)

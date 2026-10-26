@@ -22,4 +22,4 @@ Every page ends with an **Open** section listing what research must still settle
 
 ## Open
 
-- `costs.frontstate.org` is decided but not yet registered; the GitHub Pages URL serves until it is. See [Hosting](architecture/hosting.md#domain).
+- Nothing on this page. The [Research](plan/research.md) roll-up carries what every other page still owes.

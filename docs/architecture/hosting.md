@@ -14,10 +14,9 @@ Static, built from the derived JSON. Generator undecided: this site's mkdocs cou
 
 ## Domain
 
-`costs.frontstate.org`, beside [schools.frontstate.org](https://schools.frontstate.org): Front State is the civic home of both sites, and the label is the component's name (see [Lineage](../why/lineage.md#naming)). Until the record exists the GitHub Pages default URL serves; the switch is a `CNAME` file in `docs/`, one DNS record, and the repository's Pages source set to GitHub Actions so the deploy job lands.
+[costs.frontstate.org](https://costs.frontstate.org/), beside [schools.frontstate.org](https://schools.frontstate.org): Front State is the civic home of both sites, and the label is the component's name (see [Lineage](../why/lineage.md#naming)). The DNS record is a `CNAME` at the DNS host pointing `costs` at `siliconsaga.github.io`. On the repository, the Pages source is GitHub Actions, the custom domain is set in the Pages settings, and HTTPS is enforced. There is no `CNAME` file in the repository: a Pages site published by a workflow takes its domain from that setting and ignores the file, which only a branch deploy reads, so the schools ledger has one and this site does not.
 
 ## Open
 
 - Whether the civic repositories move from SiliconSaga to a Front State GitHub organization, and when; whether Front State becomes a nonprofit (see [Legal and privacy](../trust/legal.md#nonprofit-later)).
-- Register `costs.frontstate.org` and switch the Pages source to Actions.
 - The costs site's generator, at M1.
